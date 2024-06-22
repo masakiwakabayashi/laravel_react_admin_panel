@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+        <!-- Vite - CSSとJSの読み込み -->
+        @viteReactRefresh
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -161,6 +164,8 @@
                             </div>
                         </div>
                     </main>
+
+                    <div react="test-component" data-name="Laravel"></div>
 
                     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
